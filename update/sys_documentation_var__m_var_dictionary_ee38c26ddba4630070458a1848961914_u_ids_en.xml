@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_ids" label="Ids of Due Jobs" language="en" table="var__m_var_dictionary_ee38c26ddba4630070458a1848961914">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_ids</element>
+            <help/>
+            <hint/>
+            <label>Ids of Due Jobs</label>
+            <language>en</language>
+            <name>var__m_var_dictionary_ee38c26ddba4630070458a1848961914</name>
+            <plural>Ids of Due Jobs</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-09-14 20:48:09</sys_created_on>
+            <sys_id>c2edb2addb28630070458a1848961982</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Ids of Due Jobs</sys_name>
+            <sys_package display_value="Job Execution System" source="x_270367_job_exec">0e39f2d8db60230070458a1848961923</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Job Execution System">0e39f2d8db60230070458a1848961923</sys_scope>
+            <sys_update_name>sys_documentation_var__m_var_dictionary_ee38c26ddba4630070458a1848961914_u_ids_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-09-14 20:48:09</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

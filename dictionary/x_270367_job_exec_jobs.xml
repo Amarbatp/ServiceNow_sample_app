@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Jobs" max_length="40" name="x_270367_job_exec_jobs" type="collection">
+        <element choice="3" default="u_job_scheduled" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Accomplished" value="u_job_accomplished"/>
+                <element inactive_on_update="false" label="Scheduled" value="u_job_scheduled"/>
+            </choice>
+        </element>
+        <element label="Execute On" mandatory="true" max_length="40" name="u_execute_time" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" label="Job Name" mandatory="true" max_length="100" name="u_job_name" type="string"/>
+        <element label="Script To Execute" mandatory="true" max_length="65536" name="u_script" type="script"/>
+    </element>
+</database>

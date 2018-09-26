@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_script" label="Script To Execute" language="en" table="x_270367_job_exec_jobs">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_script</element>
+            <help/>
+            <hint/>
+            <label>Script To Execute</label>
+            <language>en</language>
+            <name>x_270367_job_exec_jobs</name>
+            <plural>Script To Executes</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-09-10 23:40:32</sys_created_on>
+            <sys_id>d00fb6d4dba0230070458a1848961984</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Script To Execute</sys_name>
+            <sys_package display_value="Job Execution System" source="x_270367_job_exec">0e39f2d8db60230070458a1848961923</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Job Execution System">0e39f2d8db60230070458a1848961923</sys_scope>
+            <sys_update_name>sys_documentation_x_270367_job_exec_jobs_u_script_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-09-10 23:40:32</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

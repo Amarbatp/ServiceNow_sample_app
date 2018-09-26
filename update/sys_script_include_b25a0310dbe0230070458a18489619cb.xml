@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_270367_job_exec.JobUtils</api_name>
+        <client_callable>true</client_callable>
+        <description>Script Include to verify is new name for given job is unique</description>
+        <name>JobUtils</name>
+        <script><![CDATA[var JobUtils = Class.create();
+JobUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    isNameUnique: function() {
+		var j = new GlideRecord("x_270367_job_exec_jobs");
+		j.addQuery('u_job_name', this.getParameter("sysparm_jobName"));
+		j.query();
+		if (j.getRowCount() == 0)
+			return 1;
+		else
+			return 0;
+    },
+    type: 'JobUtils'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-11 00:44:33</sys_created_on>
+        <sys_id>b25a0310dbe0230070458a18489619cb</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>JobUtils</sys_name>
+        <sys_package display_value="Job Execution System" source="x_270367_job_exec">0e39f2d8db60230070458a1848961923</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Job Execution System">0e39f2d8db60230070458a1848961923</sys_scope>
+        <sys_update_name>sys_script_include_b25a0310dbe0230070458a18489619cb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-12 01:00:30</sys_updated_on>
+    </sys_script_include>
+</record_update>

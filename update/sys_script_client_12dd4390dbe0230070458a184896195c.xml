@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>Ask to backend if job with same name exists there</description>
+        <field>u_job_name</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Validate Job Name</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+	if (isLoading || newValue === '') {
+		return;
+	}
+// 	x_270367_job_exec.CheckIfJobNameUnique();
+	var aj = new GlideAjax('JobUtils');
+	aj.addParam('sysparm_name', 'isNameUnique');
+	aj.addParam('sysparm_jobName', g_form.getValue("u_job_name"));
+	aj.getXMLAnswer(function(res) {
+		g_form.clearMessages();
+		if (res == 0)
+			g_form.showErrorBox("u_job_name", "Job name exists. Please, choose different name!", true);
+	});
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-09-11 00:58:13</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>12dd4390dbe0230070458a184896195c</sys_id>
+        <sys_mod_count>35</sys_mod_count>
+        <sys_name>Validate Job Name</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Job Execution System" source="x_270367_job_exec">0e39f2d8db60230070458a1848961923</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Job Execution System">0e39f2d8db60230070458a1848961923</sys_scope>
+        <sys_update_name>sys_script_client_12dd4390dbe0230070458a184896195c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-12 01:00:50</sys_updated_on>
+        <table>x_270367_job_exec_jobs</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>
